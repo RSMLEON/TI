@@ -1,0 +1,87 @@
+/* Estilos para el cuerpo y la raíz del documento */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea contenido en la parte superior */
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7); /* Fondo degradado */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+}
+
+/* Estilos para el contenedor del logo */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: left; /* Centra el logo horizontalmente */
+    padding: 10px; /* Espacio alrededor del logo */
+    margin-top: 0; /* Espacio arriba del logo */
+    margin-bottom: 10px; /* Espacio abajo del logo */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    top: 10px;
+}
+
+/* Estilos para los bloques de botones grandes y pequeños */
+.block-large, .block-small {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para las filas */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos generales para todos los botones */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos específicos para los botones grandes */
+.button.large {
+    width: 15vw; /* Ajuste responsivo de tamaño */
+    height: 13vw; /* Ajuste responsivo de tamaño */
+    max-width: 160px; /* Máximo tamaño del botón */
+    max-height: 130px; /* Máximo tamaño del botón */
+    background-color: #3498db; /* Azul */
+    font-size: 1.5vw; /* Ajuste responsivo del tamaño de la fuente */
+}
+
+/* Estilos específicos para los botones pequeños */
+.button.small {
+    width: 10vw; /* Ajuste responsivo de tamaño */
+    height: 8vw; /* Ajuste responsivo de tamaño */
+    max-width: 100px; /* Máximo tamaño del botón */
+    max-height: 80px; /* Máximo tamaño del botón */
+    background-color: #2ecc71; /* Verde */
+    font-size: 1vw; /* Ajuste responsivo del tamaño de la fuente */
+}
+
+/* Efecto hover para todos los botones */
+.button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al hacer hover */
+}
